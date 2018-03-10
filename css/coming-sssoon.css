@@ -492,7 +492,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     border: 0;
     border-bottom: 1px solid rgba(255,255,255,.6);
 }
-
+.nav > li > a {
+    color: #EEEEEE
+}
 .navbar .label{
     background-color: #FFFFFF;
     border: 1px solid #DDDDDD;
