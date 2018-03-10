@@ -936,3 +936,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     }
 
 }
+
+/* PROPIOS */
+
+.barra-social {
+    justify-content: space-around;
+    display: flex;
+} 
