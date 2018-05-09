@@ -20,7 +20,7 @@ hr.light {
 }
 
 a {
-    color: #337ab7;
+    color: rgb(218, 218, 218);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -28,7 +28,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #981da3;
 }
 
 h1,
@@ -124,6 +124,10 @@ aside {
 }
 
 @media(min-width:768px) {
+    .header .header-content{
+        top: 95%;
+        padding-bottom: 0px;
+    }
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -172,28 +176,17 @@ aside {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #337ab7;
     }
-    header {
-        position: relative;
-        width: 100%;
-        min-height: auto;
-        text-align: center;
-        color: #fff;
-        background-image: url(../img/fondo.jpg);
-        background-position: auto center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
+
 }
+
 
 header {
     position: relative;
-    width: 100%;
-    min-height: auto;
+    height: 100%;
+    min-height: 100%;
     text-align: center;
     color: #fff;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/mobile.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -201,7 +194,7 @@ header {
     -o-background-size: cover;
 }
 #about {
-    background-image: url(../img/metodologia.jpg);
+    background-image: url(../img/mobile.jpg);
     background-position: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -214,7 +207,8 @@ header .header-content {
     width: 100%;
     padding: 100px 15px;
     text-align: center;
-    margin-top: 120px;
+    top: 60%;
+    padding-bottom: 0px;
 }
 
 header .header-content .header-content-inner h1 {
@@ -238,11 +232,12 @@ header .header-content .header-content-inner p {
 @media(min-width:768px) {
     header {
         min-height: 100%;
+        background-image: url(../img/fondo.jpg);
     }
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 88%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -270,6 +265,8 @@ header .header-content .header-content-inner p {
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
+    padding-bottom: 40px;
+
 }
 
 @media(min-width:992px) {
@@ -446,9 +443,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #bd1121;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #bd1121;
 }
 
 .btn-primary:active,
@@ -565,26 +562,21 @@ body {
 /* Social Links
 ---------------------------------- */
 .social-links {
-  padding-left: 48px;
+  padding: 0;
   list-style: none;
   margin: 15px 0;
-  margin-top: 90px;
 }
 .social-links li {
-  margin: 10px 25px 10px 0;
+  margin: 10px 10px 10px 10px;
   display: inline-block;
   font-size: 36px;
 }
 .social-links li a {
-    color: #f2f2f2;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-.social-links li a:hover {
-    color: #337ab7;
 }
 
 .social-links li.twitter a {
@@ -593,7 +585,7 @@ body {
 .social-links li.linkedin a {
   color: #0976b4;
 }
-.social-links li.googleplus a:hover {
+.social-links li.googleplus a {
   color: #dd4b39;
 }
 .social-links li.facebook a {
